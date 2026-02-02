@@ -35,3 +35,7 @@ def ask_for_values():
                 raise ValueError("Informe pelo menos um valor.")
 
             return values
+
+        except ValueError as e:
+            print(f"\n❌ Erro: {e}")
+            print("Tente novamente.")
