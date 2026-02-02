@@ -75,3 +75,10 @@ def quartiles(values):
     q3 = median(upper_half)
 
     return q1, q2, q3
+
+def coefficient_of_variation(values):
+    """Calcula o coeficiente de variação em porcentagem."""
+    m = mean(values)
+    if m == 0:
+        return None
+    return (standard_deviation(values) / m) * 100
